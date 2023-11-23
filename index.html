@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .nav-link {
+            margin-right: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.461);
+            border-radius: 2px;
+        }
+        
+        @media (max-width:420px) {
+            .nav-link {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.731);
+            }
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        /* Card Styles */
+        
+        .card-sl {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .card-image img {
+            max-height: 100%;
+            max-width: 100%;
+            border-radius: 8px 8px 0px 0;
+        }
+        
+        .card-action {
+            position: relative;
+            float: right;
+            margin-top: -25px;
+            margin-right: 20px;
+            z-index: 2;
+            color: #E26D5C;
+            background: #fff;
+            border-radius: 100%;
+            padding: 15px;
+            font-size: 15px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .card-action:hover {
+            color: #fff;
+            background: #E26D5C;
+            -webkit-animation: pulse 1.5s infinite;
+        }
+        
+        .card-heading {
+            font-size: 18px;
+            font-weight: bold;
+            background: #fff;
+            padding: 10px 15px;
+        }
+        
+        .card-text {
+            padding: 10px 15px;
+            background: #fff;
+            font-size: 14px;
+            color: #636262;
+        }
+        
+        .card-button {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            width: 100%;
+            background-color: #1F487E;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .card-button:hover {
+            text-decoration: none;
+            background-color: #1D3461;
+            color: #fff;
+        }
+        
+        @-webkit-keyframes pulse {
+            0% {
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+            }
+            70% {
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+            }
+            100% {
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+            }
+        }
+        
+        .intern {
+            font-size: small;
+            color: #636262;
+            /*font family*/
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pop1">
+        <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project 1</h5>
+                        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pop2">
+        <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">AttendEase</h5>
+                        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <div class="card ">
+                            <div class="d-flex flex-column">
+                                <center>
+                                    <img class="img-fluid" src="./images/attendance.jpg" style="width: 15rem;" alt="">
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <div class="card col-10">
+                            <p class="card-title px-3 mt-2 text-black"> Role: <br><strong>Team Leader</strong></p>
+                            <p class="card-title px-3 mt-2 text-black"> Tech Stack: <br><strong>Python,Django,MySQL, HTML, CSS, Bootstrap</strong></p>
+                            <p class="card-title px-3 mt-2 text-black"> Description: <br><strong>Team Leader</strong></p>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pop3">
+        <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project 3</h5>
+                        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary" style="background: rgba(0, 0, 0, 0.425);">
+        <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                </span> &nbsp INTRO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span>
+                                    <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
+                                        </span> &nbsp ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#education"><span>
+                                <i class="fa-solid fa-school" style="color: #ffffff;"></i>
+                            </span> &nbsp EDUCATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills"><span>
+                                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                        </span> &nbsp SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#certifications">
+                                <span>
+                                    <i class="fa-solid fa-certificate" style="color: #ffffff;"></i>
+                            </span> &nbsp CERTIFICATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#internships"><span>
+                                <i class="fa-solid fa-briefcase" style="color: #ffffff;"></i>
+                        </span> &nbsp INTERNSHIPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#projects"><span>
+                                <i class="fa-solid fa-laptop" style="color: #ffffff;"></i>
+                        </span> &nbsp PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact"><span>
+                                <i class="fa-solid fa-address-book" style="color: #ffffff;"></i>
+                            </span>&nbsp CONTACT</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+
+        <!--picture-->
+        <section id="aboutme" class="bg-black border-light mb-0 pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 p-3 d-flex justify-content-center">
+                        <img class="img-fluid rounded-circle" src="./images/avatars/hi.png" alt="" width="400px" height="auto" style="box-shadow: 5px 5px 5px white;">
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-light ">
+                        <p><strong>Hi, I'm</strong></p>
+                        <h1>Sandhya Rani</h1>
+                        <p>I am a full stack developer with hands-on in web development</p>
+                        <hr style="color: white; " />
+                        <p style="text-align: justify;">Full Stack Developer in the making, I am a 4th-year BTech student specializing in Computer Science Engineering. Fueled by a passion for innovation and armed with a robust academic background, I bring proactive problem-solving skills,
+                            positioning myself as a dynamic contributor to the evolving realm of computer science.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <br id="education">
+            <br>
+        </section>
+        <!--About me end-->
+
+        <!--Education-->
+        <section id="education" class="bg-white border-light pt-3">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 ">
+                    <div class="section-header text-center wow fadeInUp" data-wow-delay=".2s">
+                        <h3><span><i class="fa-solid fa-school" style="color: #000000;"></i>
+                         &nbspEducation</span></h3>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="container pb row row-cols-lg-3 row-cols-1 g-lg-3 g-2 mb-0 pb-0">
+
+                    <div class="col">
+                        <div class="row align-items-center text-start p-2">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-content-center justify-content-center">
+                                        <i class="fa-solid fa-user-graduate fa-2xl img-fluid rounded-start" style="color: #ff6600;"></i>
+                                        <!--img src="..." class="img-fluid rounded-start" alt="..."-->
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bachelor of Technology</h5>
+                                            <p class="card-text mb-0">Computer Science and Engineering (CSE)</p>
+                                            <p class="card-text mb-0"><small class="text-muted">SVR Engineering College</small></p>
+                                            <p class="card-text pt-0"><small class="text-muted">Year of Passing: 2024</small></p>
+                                            <!--percentage-->
+                                            <small class="text-success"><strong>Percentage: 86 %</strong></small>
+                                            <!--p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center text-start  p-2">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-content-center justify-content-center">
+                                        <i class="fa-solid fa-school fa-2xl img-fluid rounded-start" style="color: #ff6600;"></i>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pre-University Course</h5>
+                                            <p class="card-text mb-0">Mathematics-Physics-Chemistry (MPC)</p>
+                                            <p class="card-text mb-0"><small class="text-muted">Pragnya junior college</small></p>
+                                            <p class="card-text pt-0"><small class="text-muted">Year of Passing: 2020</small></p>
+                                            <!--percentage-->
+                                            <small class="text-success"><strong>Percentage: 92.8 %</strong></small>
+                                            <!--p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col bg-transparent">
+                        <div class="row align-items-center text-start  p-2">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-content-center justify-content-center">
+                                        <i class="fa-solid fa-book-open fa-2xl img-fluid rounded-start" style="color: #ff6600;"></i>
+                                        <!--img src="..." class="" alt="..."-->
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">School</h5>
+                                            <p class="card-text mb-0">Mathematics-Physics-Chemistry (MPC)</p>
+                                            <p class="card-text mb-0"><small class="text-muted">Sri Raghavendra High school</small></p>
+                                            <p class="card-text pt-0"><small class="text-muted">Year of Passing: 2018</small></p>
+                                            <!--percentage-->
+                                            <small class="text-success"><strong>Percentage: 97 %</strong></small>
+                                            <!-- p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--div class="col-lg-4 col-md-12 col-sm-12">  
+                                <h5 class="text-center mt-3">Graduation</h5>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 " style="border-left: 1px solid black;">
+
+                                <ul class="list-group list-group-flush">
+
+                                    <h5>Bachelor of Technology in Computer Science and Engineering (CSE)</h5>
+                                    <small>University of Delhi</small>
+                                    <br>
+                                    <small>GPA : 7.8 / 10</small>
+                                    <br>
+                                    <small>Duration : January 2018 - July 2022</small>
+                                    <br>
+                                    <small>CGPA : 8.6 / 10</small>
+                                    <br>
+                                </ul>
+
+                            </div-->
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <br id="skills">
+            <br>
+        </section>
+        <!--Education End-->
+
+
+        <!--Skill start -->
+
+        <section class="pt-4 pb-0 mt-0 border-light border-2" style="background-color: rgb(0, 0, 0);">
+            <div class="container ">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 ">
+                        <div class="section-header text-center text-white  wow fadeInUp" data-wow-delay=".2s">
+                            <h3><span><i class="fa-solid fa-gear" style="color: #ffffff;"></i> &nbsp SKILLS</span></h3>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-lg-10 col-10 p-1">
+                    <div class="row row-cols-1 row-cols-lg-3 g-lg-5 g-2">
+                        <div class="col">
+
+                            <div class="card bg-black" style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+
+                                <div class="card-body">
+                                    <center>
+                                        <i class="fa-brands fa-python fa-2xl" style="color: #5c98ff;font-size: 4rem;"></i>
+                                    </center>
+                                    <h5 class="card-title text-center mt-3 text-white">Python</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">With Python skills, I have the ability to develop powerful and efficient applications across.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black" style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <i class="fa-brands fa-java fa-2xl" style="font-size: 4rem;color: orangered;"></i>
+                                    </div>
+                                    <h5 class="card-title text-center mt-3 text-white">Java</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">With proficient Java skills, I excel in programming, delivering robust and efficient solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black " style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+                                <div class="card-body">
+                                    <center>
+                                        <i class="fa-solid fa-c fa-2xl" style="color: #ffffff;font-size: 4rem;"></i>
+                                    </center>
+                                    <h5 class="card-title text-center mt-3 text-white">Basics of C</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">With basic C skills, I initiate simple yet impactful solutions, paving advanced programming paths.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                            <div class="card bg-black" style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+
+                                <div class="card-body">
+                                    <center>
+                                        <img class="img-fluid" style="height: 4rem;" src="./images/django.png" alt="">
+                                    </center>
+                                    <h5 class="card-title text-center mt-3 text-white">Django</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">Proficient in Django, I create powerful web applications with efficiency and scalability.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black" style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+                                <div class="card-body">
+                                    <center>
+                                        <i class="fa-brands fa-html5 fa-2xl" style="color: #ff6600;font-size: 4rem;"></i>
+                                    </center>
+                                    <h5 class="card-title text-center mt-3 text-white">HTML</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">Skilled in HTML, I design and structure web content for seamless user experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black " style="box-shadow: rgba(0, 115, 255, 0.301) 0px 10px 20px;border:1px solid rgba(255, 255, 255, 0.32);">
+                                <div class="card-body">
+                                    <center>
+                                        <i class="fa-brands fa-css3-alt fa-2xl" style="color: #0055ff;font-size: 4rem;"></i>
+                                    </center>
+                                    <h5 class="card-title text-center mt-3 text-white">CSS</h5>
+                                    <p class="text-white">Proficiency</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mt-3 text-white" style="text-align: justify;">Proficient in CSS and Bootstrap, I style and enhance web content for seamless user experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br id="certifications">
+            <br>
+        </section>
+        <!--skills end-->
+
+        <!--Certifications-->
+        <section class="certification section-padding bg-white mt-0 pt-4 pb-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 ">
+                        <div class="section-header text-center wow fadeInUp" data-wow-delay=".2s">
+                            <h3><span><i class="fa-solid fa-certificate" style="color: #000000;"></i> &nbsp CERTIFICATIONS</span></h3>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-lg-2 g-lg-3 g-2">
+                        <div class="col p-2">
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid rounded-circle p-2" src="./images/af.png" alt="" width="200px" height="auto" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <strong><p class="mt-3 mb-0">Microsoft Azure Fundatamentals</p></strong>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.credly.com/badges/decd1058-c423-4f67-b850-9adf6ab5db96/public_url" class="btn btn-success">Verify</a>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid rounded-circle p-2" src="./images/ai.png" alt="" width="200px" height="auto" style="box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.311);">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <strong><p class="mt-3 mb-0">Microsoft Azure AI Fundatamentals</p></strong>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://learn.microsoft.com/api/credentials/share/en-us/LSandhyarani-9377/5A05FCE3EBADA0CB?sharingId=9A3E001C99232230" class="btn btn-success">Verify</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br id="internships">
+            <br>
+        </section>
+        <!--Cerifications End-->
+        <!--INTERNSHIPS-->
+        <section class="internships section-padding bg-black pt-4 pb-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 ">
+                        <div class="section-header text-center text-white wow fadeInUp" data-wow-delay=".2s">
+                            <h3><span><i class="fa-solid fa-briefcase" style="color: #ffffff;"></i> &nbsp INTERNSHIPS</span></h3>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-lg-3 g-lg-3 g-2">
+                        <div class="col">
+                            <div class="d-flex  rounded" style="background: #1D3461;">
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-white" src="./images/sf.png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="px-3 text-white text-center"><strong>SmartInternz Intern</strong></p>
+                                    <ul class="list-group list-group-light p-2">
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Organization</i>: <strong>Salesforce</strong></li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Duration</i>: 2 Months</li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>status</i>: Completed</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex rounded" style="background: #1D3461;">
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-white" src="./images/cou.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="px-3 text-white text-center"><strong>Google Data Analytics</strong></p>
+                                    <ul class="list-group list-group-light p-2">
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Organization</i>: <strong>Coursera</strong></li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Duration</i>: 2 Months</li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>status</i>: Completed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex rounded" style="background: #1D3461;">
+                                <div class="col-4">
+                                    <img class="img-fluid rounded" src="./images/edu.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="px-3 text-white text-center"><strong>Cloud Computing</strong></p>
+                                    <ul class="list-group list-group-light p-2">
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Organization</i>: <strong>Coursera</strong></li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>Duration</i>: 2 Months</li>
+                                        <li class="list-group-item px-3 border-0 p-0 intern text-white"><i>status</i>: Completed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br id="projects">
+            <br>
+            <br>
+        </section>
+
+        <!--Projects-->
+        <section class="projects section-padding bg-white mt-0 pt-4 pb-0 mb-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 ">
+                        <div class="section-header text-center wow fadeInUp" data-wow-delay=".2s">
+                            <h3><span><i class="fa-solid fa-laptop" style="color: #000000;"></i> &nbsp PROJECTS</span></h3>
+                            <hr />
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="d-lg-flex justify-content-center align-content-center">
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <div class="card-sl">
+                                    <div class="card-image">
+                                        <img src="./images/quiz.jpg" class="img-fluid" />
+                                    </div>
+                                    <!--a class="card-action" href="#"><i class="fa-solid fa-1" style="color: #005eff;"></i></a-->
+                                    <div class="card-heading">
+                                        QuizQuest
+                                    </div>
+                                    <div class="card-text">
+                                        Challenge your knowledge and have fun with QuizQuest, the ultimate quiz app offering a diverse range of engaging quizzes for every intellect.
+                                    </div>
+                                    <div class="card-text">
+                                        <a href="" class="btn btn-success"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>&nbsp GitHub</a>
+                                    </div>
+                                    <a href="#" type="button" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#project1" class="card-button"> Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <div class="card-sl">
+                                    <div class="card-image">
+                                        <img src="./images/attendance.jpg" class="img-fluid" />
+                                    </div>
+
+                                    <!--a class="card-action" href="#"><i class="fa-solid fa-1" style="color: #005eff;"></i></a-->
+                                    <div class="card-heading">
+                                        AttendEase
+                                    </div>
+                                    <div class="card-text">
+                                        Effortlessly manage attendance and time tracking with AttendEase, streamlining organizational processes for enhanced efficiency.
+                                    </div>
+                                    <div class="card-text">
+                                        <a href="" class="btn btn-success"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>&nbsp GitHub</a>
+                                    </div>
+                                    <a href="#" type="button" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#project2" class="card-button"> Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <div class="card-sl">
+                                    <div class="card-image">
+                                        <img src="./images/cerificates.jpg" class="img-fluid" />
+                                    </div>
+
+                                    <!--a class="card-action" href="#"><i class="fa-solid fa-1" style="color: #005eff;"></i></a-->
+                                    <div class="card-heading">
+                                        CertiVault
+                                    </div>
+                                    <div class="card-text">
+                                        Elevate your professional profile with CertiVault, the secure platform for seamlessly storing and presenting your certifications.
+                                    </div>
+                                    <div class="card-text">
+                                        <a href="" class="btn btn-success"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>&nbsp GitHub</a>
+                                    </div>
+                                    <a href="#" type="button" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#project3" class="card-button"> Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <br id="contact">
+                <br>
+        </section>
+        <!--Projects End-->
+        <!--Contact Start-->
+        <section class="bg-black text-white pt-3 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <center>
+                            <h1 class="mb-4">Connect at</h1>
+                        </center>
+                        <center>
+                            <div class="mb-3">
+                                <a href="https://github.com/sandhya544" class="btn btn-success w-50 mb-1"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i> &nbsp GitHub</a>
+                                <br>
+                                <a href="https://www.linkedin.com/in/sandhya-rani-lagisetty-999536221/" class="btn btn-primary w-50 mb-1"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i> &nbsp LinkedIn</a>
+                            </div>
+                        </center>
+
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <h1 class="mb-lg-5 mb-3">Contact</h1>
+                        <p>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Address:</span>
+                            <span>Allagadda</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <span>Mail:</span>
+                            <a class="text-decoration-none text-white" href="mailto:20am1a0544@svrec.ac.in">20am1a0544@svrec.ac.in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <script src="https://kit.fontawesome.com/dedeab9b5a.js " crossorigin="anonymous "></script>
+        <!-- MDB -->
+        <!-- Your other HTML content here -->
+
+        <!-- MDB Bootstrap JS and Popper.js -->
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
